@@ -1,0 +1,46 @@
+.title-box {
+    background-image: url("/_images/pattern.jpeg");
+}
+
+h1 {
+    font-family: "Helvetica";
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Helvetica";
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+h3 {
+    font-family: "Helvetica";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#brushes-title-section {
+    background-color: mediumspringgreen;
+}
+
+#frames-title-section {
+    background-color: lightcoral;
+}
+
+#paint-title-section {
+    background-color: skyblue;
+}
+
+p {
+    font-family: "Helvetica";
+}
+
+.product-price {
+    font-family: "Helvetica";
+    font-weight: bold;
+    color: blue;
+}
