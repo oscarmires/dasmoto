@@ -4,62 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cs_styles.css" type="text/css">
     <title>HTML Tables Cheatsheet</title>
 </head>
-<body>
-    <header>
-        <h1>HTML Cheatsheets</h1>
-        <h2>Tables</h2>
-        <div id="author-time">
-            <p>by <a href="https://github.com/oscarmires" target="_blank">oscarmires</a></p>
-            <time datetime="2021-02-12">Feb 12, 2021</time>
-        </div>
-    </header>
-    <main>
-        <article class="cheatsheet">
-            <section class="brief">
-                <p></p>
-            </section>
-            <section class="cheat" id="used-tags">
-                <h3>Used tags</h3>
-            </section>
-            <section class="cheat" id="sample-code">
-                <h3>Sample code</h3>
-                <code></code>
-            </section>
-            <section class="cheat" id="guides-references">
-                <h3>External guides and references</h3>
-                <ul class="external-guides-links">
-                    <li>
-                        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank">
-                            HTML Tables (MDN)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank">
-                            HTML Tables (W3 Schools)
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://html.com/tags/table/" target="_blank">
-                            HTML Tables (Html.com)
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </article>
-    </main>
-    <footer>
-        <div id="site-description">
-            <h4>HTML Cheatsheets</h4>
-            <p>Description</p>
-        </div>
-        <div id="contact">
-            <address></address>
-        </div>
-        <div class="copyright">
-            <p>Copiright</p>
-        </div>
-    </footer>
-</body>
+<div class="page">
+    <body>
+        <header>
+            <h1>HTML Cheatsheets</h1>
+            <h2>Tables</h2>
+            
+        </header>
+        <main>
+            <div id="author-time">
+                <p>by <a href="https://github.com/oscarmires" target="_blank">oscarmires</a></p>
+                <time datetime="2021-02-12">Feb 12, 2021</time>
+            </div>
+            <article class="cheatsheet">
+                <section class="brief">
+                    <p>The HTML <code>&lang;table&rang;</code> is an element that enables two-dimensional representation of tabular data in HTML pages.</p>
+                </section>
+                <section class="cheat" id="used-tags">
+                    <h3>Used tags</h3>
+                    <table id="used-tags-definitions">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Purpose</th>
+                                <th>Attributes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <code>
+                                        &lang;table&rang;...&lang;/table&rang;
+                                    </code>
+                                </td>
+                                <td>Table</td>
+                                <td>Wraps the whole table</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <code>
+                                        &lang;tr&rang;...&lang;/tr&rang;
+                                    </code>
+                                </td>
+                                <td>Table row</td>
+                                <td>Wraps around a set of elements, defining them as belonging to the same row</td>
+                                <td>colspan, rowspan, headers</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <code>
+                                        &lang;th&rang;...&lang;/th&rang;
+                                    </code>
+                                </td>
+                                <td>Table header</td>
+                                <td>Defines a header for a column</td>
+                                <td>colspan, rowspan, scope</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <code>
+                                        &lang;td&rang;...&lang;/td&rang;
+                                    </code>
+                                </td>
+                                <td>Table data</td>
+                                <td>Marks the actual bits of data</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <code>
+                                        &lang;col&rang;...&lang;/col&rang;
+                                    </code>
+                                </td>
+                                <td>Column</td>
+                                <td>Represents nth column in <code>&lang;colgroup&rang;</code></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <code>
+                                        &lang;colgroup&rang;...&lang;/colgroup&rang;
+                                    </code>
+                                </td>
+                                <td>Column group</td>
+                                <td>Specifies styling information for columns</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section class="cheat" id="sample-code">
+                    <h3>Sample code</h3>
+                    <code>
+                        <pre>
+    &lang;table&rang;
+        &lang;tr&rang;
+            &lang;th&rang;Multiples of two&lang;/th&rang;
+            &lang;th&rang;Multiples of three&lang;/th&rang;
+        &lang;/tr&rang;
+        &lang;tr&rang;
+            &lang;td&rang;2&lang;/td&rang;
+            &lang;td&rang;3&lang;/td&rang;
+        &lang;/tr&rang;
+        &lang;tr&rang;
+            &lang;td&rang;4&lang;/td&rang;
+            &lang;td&rang;6&lang;/td&rang;
+        &lang;/tr&rang;
+        &lang;tr&rang;
+            &lang;td&rang;6&lang;/td&rang;
+            &lang;td&rang;9&lang;/td&rang;
+        &lang;/tr&rang;
+    &lang;/table&rang;
+                        </pre>
+                    </code>
+                    <p>The previous code generates this table: </p>
+                    <table>
+                        <tr>
+                            <th>Multiples of two</th>
+                            <th>Multiples of three</th>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>9</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="cheat" id="guides-references">
+                    <h3>External guides and references</h3>
+                    <ul class="external-guides-links">
+                        <li>
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank">
+                                HTML Tables (MDN)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank">
+                                HTML Tables (W3 Schools)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://html.com/tags/table/" target="_blank">
+                                HTML Tables (Html.com)
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <div id="site-description">
+                <h4>HTML Cheatsheets</h4>
+                <p>
+                    <i>HTML Cheatsheets</i> is a web developer learning 
+                    project available in <a href="https://github.com/oscarmires/dasmoto/tree/main/tables-cheatsheet" target="_blank">Github</a>. 
+                    It is part of Dasmoto, another front-end web development project.
+                </p>
+            </div>
+            <div id="contact">
+                <h4>Contact</h4>
+                <address>33 1234 5678<br>name@example.com</address>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2021 oscarmires</p>
+            </div>
+        </footer>
+    </body>    
+</div>
 </html>
