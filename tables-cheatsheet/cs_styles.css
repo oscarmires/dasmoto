@@ -71,3 +71,19 @@ th {
 td {
     padding: 1%;
 }
+
+a,
+a:visited {
+    color: black;
+}
+
+a:hover,
+a:active,
+footer a:hover {
+    color: teal;
+}
+
+footer a,
+footer a:visited {
+    color: white;
+}
