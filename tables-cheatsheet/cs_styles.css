@@ -42,7 +42,7 @@ main {
 }
 
 code, code pre {
-    font-family: "Courier";
+    font-family: "Roboto Mono", "Courier", monospace;
 }
 
 footer {
